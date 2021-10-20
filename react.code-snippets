@@ -1,0 +1,56 @@
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  "Export a Functional Component": {
+    "prefix": "rfcp",
+    "body": [
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  $3",
+      "}",
+      "",
+      "export const ${TM_FILENAME_BASE} = ({$2} : ${TM_FILENAME_BASE}Props) => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Log output to console"
+  },
+  "Export an empty React Function Component": {
+    "prefix": "rfce",
+    "body": [
+      "export const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <div>$1</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Log output to console"
+  },
+  "Import from" : {
+    "prefix": "impf",
+    "body": [
+      "import {$1} from \"./$2\""
+    ],
+    "description": "Import from a file"
+  },
+  "emotion.css import": {
+    "prefix": "impec",
+    "body": [
+      "/** @jsxImportSource @emotion/react */",
+      "import { css } from \"@emotion/react\"",
+      "",
+    ],
+    "description": "Macro and Import for emotion.css"
+  },
+  "emotion.css attribute": {
+    "prefix": "emca",
+    "body": [ "css={css`$1`}" ],
+    "description": "emotion.css attribute inside a JSX tag"
+  }      
+}
